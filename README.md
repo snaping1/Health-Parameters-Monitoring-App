@@ -34,18 +34,26 @@
 ## 📸 Скриншоты приложения
 
 <div align="center">
-  <img src="./image/image1.png" width="45%" alt="Главный экран приложения">
+  <img src="./image/image1.png" width="30%" >
+  <img src="./image/image2.png" width="30%">
+  <img src="./image/image3.png" width="30%" >
+  <img src="./image/image4.png" width="30%" >
+  <img src="./image/image5.png" width="30%" >
 </div>
 
 <div align="center">
-  <img src="./image/image6.png" width="32%" alt="Описание изображения 6">
-  <img src="./image/image7.png" width="32%" alt="Описание изображения 7">
-  <img src="./image/image8.png" width="32%" alt="Описание изображения 8">
+  <img src="./image/image6.png" width="32%" >
+  <img src="./image/image7.png" width="32%" >
+  <img src="./image/image8.png" width="32%" >
 </div>
 
 <div align="center">
-  <img src="./image/image9.png" width="49%" alt="Демо 1">
-  <img src="./image/image10.png" width="49%" alt="Демо 2">
+  <img src="./image/image9.png" width="49%" >
+  <img src="./image/image10.png" width="49%" >
+  <img src="./image/image11.png" width="49%" >
+  <img src="./image/image12.png" width="49%" >
+  <img src="./image/image13.png" width="49%" >
+  <img src="./image/image14.png" width="49%">
 </div>
 
 
