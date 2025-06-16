@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/dashboardFragment"
+        android:icon="@drawable/ic_home"
+        android:title="Главная" />
+
+    <item
+        android:id="@+id/parametersFragment"
+        android:icon="@drawable/ic_chart"
+        android:title="Параметры" />
+
+    <item
+        android:id="@+id/remindersFragment"
+        android:icon="@drawable/ic_notifications"
+        android:title="Напоминания" />
+
+    <item
+        android:id="@+id/recommendationsFragment"
+        android:icon="@drawable/ic_tips"
+        android:title="Рекомендации" />
+
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_person"
+        android:title="Профиль" />
+
+</menu> 

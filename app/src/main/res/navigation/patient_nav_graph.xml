@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/patient_nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <!-- Auth Flow -->
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.zdorovie.ui.auth.LoginFragment"
+        android:label="Вход"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.zdorovie.ui.auth.RegisterFragment"
+        android:label="Регистрация"
+        tools:layout="@layout/fragment_register" />
+
+    <!-- Main Dashboard -->
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.zdorovie.ui.user.DashboardFragment"
+        android:label="Главная"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_dashboardFragment_to_addParameterFragment"
+            app:destination="@id/addParameterFragment" />
+    </fragment>
+
+    <!-- Parameters Section -->
+    <fragment
+        android:id="@+id/parametersFragment"
+        android:name="com.example.zdorovie.ui.user.ParametersFragment"
+        android:label="Параметры"
+        tools:layout="@layout/fragment_parameters">
+        <action
+            android:id="@+id/action_parametersFragment_to_addParameterFragment"
+            app:destination="@id/addParameterFragment" />
+    </fragment>
+
+    <!-- Reminders Section -->
+    <fragment
+        android:id="@+id/remindersFragment"
+        android:name="com.example.zdorovie.ui.user.RemindersFragment"
+        android:label="Напоминания"
+        tools:layout="@layout/fragment_reminders">
+        <action
+            android:id="@+id/action_remindersFragment_to_addReminderFragment"
+            app:destination="@id/addReminderFragment" />
+    </fragment>
+
+    <!-- Recommendations Section -->
+    <fragment
+        android:id="@+id/recommendationsFragment"
+        android:name="com.example.zdorovie.ui.user.RecommendationsFragment"
+        android:label="Рекомендации"
+        tools:layout="@layout/fragment_recommendations">
+        <action
+            android:id="@+id/action_recommendationsFragment_to_addParameterFragment"
+            app:destination="@id/addParameterFragment" />
+    </fragment>
+
+    <!-- Add Parameter -->
+    <fragment
+        android:id="@+id/addParameterFragment"
+        android:name="com.example.zdorovie.ui.user.AddParameterFragment"
+        android:label="Добавить параметр"
+        tools:layout="@layout/fragment_add_parameter" />
+        
+    <!-- Add Reminder -->
+    <fragment
+        android:id="@+id/addReminderFragment"
+        android:name="com.example.zdorovie.ui.user.AddReminderFragment"
+        android:label="Создать напоминание"
+        tools:layout="@layout/fragment_add_reminder" />
+
+    <!-- Profile -->
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.zdorovie.ui.common.ProfileFragment"
+        android:label="Профиль"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/patient_nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    
+    <!-- Глобальные действия -->
+    <action
+        android:id="@+id/action_global_patient_dashboard"
+        app:destination="@id/dashboardFragment"
+        app:popUpTo="@id/patient_nav_graph"
+        app:popUpToInclusive="true" />
+
+</navigation> 

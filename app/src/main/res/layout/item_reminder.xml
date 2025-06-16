@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/spacing_xs"
+    app:cardCornerRadius="@dimen/card_radius"
+    app:cardElevation="@dimen/card_elevation"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/spacing_md"
+        android:gravity="center_vertical">
+
+        <!-- Icon -->
+        <ImageView
+            android:layout_width="@dimen/icon_size_md"
+            android:layout_height="@dimen/icon_size_md"
+            android:layout_marginEnd="@dimen/spacing_md"
+            android:src="@drawable/ic_notifications"
+            android:tint="@color/primary_green" />
+
+        <!-- Content -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvReminderTitle"
+                style="@style/AppTextSubheading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Заголовок напоминания"
+                android:textSize="@dimen/text_size_md" />
+
+            <TextView
+                android:id="@+id/tvReminderDescription"
+                style="@style/AppTextCaption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_xs"
+                android:text="Содержание напоминания"
+                android:maxLines="2"
+                android:ellipsize="end" />
+
+        </LinearLayout>
+
+        <!-- Edit Button -->
+        <ImageButton
+            android:id="@+id/btnEditReminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/spacing_sm"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="@dimen/spacing_sm"
+            android:src="@drawable/ic_edit"
+            android:contentDescription="Редактировать" />
+
+        <!-- Delete Button -->
+        <ImageButton
+            android:id="@+id/btnDeleteReminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="@dimen/spacing_sm"
+            android:src="@drawable/ic_delete"
+            android:contentDescription="Удалить" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView> 

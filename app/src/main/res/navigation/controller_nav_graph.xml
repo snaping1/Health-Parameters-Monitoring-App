@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/controller_nav_graph"
+    app:startDestination="@id/controllerDashboardFragment">
+
+    <!-- Auth Flow -->
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.zdorovie.ui.auth.LoginFragment"
+        android:label="Вход"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.zdorovie.ui.auth.RegisterFragment"
+        android:label="Регистрация"
+        tools:layout="@layout/fragment_register" />
+
+    <!-- Controller Dashboard -->
+    <fragment
+        android:id="@+id/controllerDashboardFragment"
+        android:name="com.example.zdorovie.ui.controller.ControllerDashboardFragment"
+        android:label="Панель контролера"
+        tools:layout="@layout/fragment_controller_dashboard">
+        <action
+            android:id="@+id/action_controllerDashboardFragment_to_patientsListFragment"
+            app:destination="@id/patientsListFragment" />
+        <action
+            android:id="@+id/action_controllerDashboardFragment_to_thresholdsFragment"
+            app:destination="@id/thresholdsFragment" />
+        <action
+            android:id="@+id/action_controllerDashboardFragment_to_controllerRecommendationsFragment"
+            app:destination="@id/controllerRecommendationsFragment" />
+    </fragment>
+
+    <!-- Patients List -->
+    <fragment
+        android:id="@+id/patientsListFragment"
+        android:name="com.example.zdorovie.ui.controller.PatientsListFragment"
+        android:label="Пациенты"
+        tools:layout="@layout/fragment_patients_list">
+        <action
+            android:id="@+id/action_patientsListFragment_to_patientDetailsFragment"
+            app:destination="@id/patientDetailsFragment" />
+    </fragment>
+
+    <!-- Patient Details -->
+    <fragment
+        android:id="@+id/patientDetailsFragment"
+        android:name="com.example.zdorovie.ui.controller.PatientDetailsFragment"
+        android:label="Детали пациента"
+        tools:layout="@layout/fragment_patient_details">
+        <argument
+            android:name="patientId"
+            app:argType="string" />
+    </fragment>
+
+    <!-- Thresholds Management -->
+    <fragment
+        android:id="@+id/thresholdsFragment"
+        android:name="com.example.zdorovie.ui.controller.ThresholdsFragment"
+        android:label="Пороговые значения"
+        tools:layout="@layout/fragment_thresholds" />
+
+    <!-- Recommendations -->
+    <fragment
+        android:id="@+id/controllerRecommendationsFragment"
+        android:name="com.example.zdorovie.ui.controller.ControllerRecommendationsFragment"
+        android:label="Рекомендации"
+        tools:layout="@layout/fragment_controller_recommendations">
+        <action
+            android:id="@+id/action_controllerRecommendationsFragment_to_createRecommendationFragment"
+            app:destination="@id/createRecommendationFragment" />
+    </fragment>
+
+    <!-- Create Recommendation -->
+    <fragment
+        android:id="@+id/createRecommendationFragment"
+        android:name="com.example.zdorovie.ui.controller.CreateRecommendationFragment"
+        android:label="Создать рекомендацию"
+        tools:layout="@layout/fragment_create_recommendation" />
+
+    <!-- Profile -->
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.zdorovie.ui.common.ProfileFragment"
+        android:label="Профиль"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/controller_nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    
+    <!-- Глобальные действия -->
+    <action
+        android:id="@+id/action_global_controller_dashboard"
+        app:destination="@id/controllerDashboardFragment"
+        app:popUpTo="@id/controller_nav_graph"
+        app:popUpToInclusive="true" />
+
+</navigation> 

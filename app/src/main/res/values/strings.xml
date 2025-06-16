@@ -1,0 +1,239 @@
+<resources>
+    <string name="app_name">Здоровье</string>
+    
+    <!-- Auth -->
+    <string name="email">Email</string>
+    <string name="password">Пароль</string>
+    <string name="name">Имя</string>
+    <string name="login">Войти</string>
+    <string name="register">Регистрация</string>
+    <string name="sign_up">Зарегистрироваться</string>
+    <string name="have_account">Уже есть аккаунт?</string>
+    <string name="no_account">Нет аккаунта?</string>
+    <string name="patient">Пациент</string>
+    <string name="controller">Контролер здоровья</string>
+    <string name="role">Роль</string>
+    
+    <!-- Navigation -->
+    <string name="dashboard">Главная</string>
+    <string name="parameters">Параметры</string>
+    <string name="reminders">Напоминания</string>
+    <string name="recommendations">Рекомендации</string>
+    <string name="profile">Профиль</string>
+    <string name="patients">Пациенты</string>
+    <string name="select_patient">Выберите пациента</string>
+    
+    <!-- Health Parameters -->
+    <string name="add_parameter">Добавить параметр</string>
+    <string name="parameter_type">Тип параметра</string>
+    <string name="parameter_value">Значение</string>
+    <string name="notes">Заметки</string>
+    <string name="save">Сохранить</string>
+    <string name="cancel">Отмена</string>
+    
+    <!-- Reminders -->
+    <string name="add_reminder">Добавить напоминание</string>
+    <string name="reminder_time">Время напоминания</string>
+    <string name="repeat_days">Дни повтора</string>
+    <string name="monday">Пн</string>
+    <string name="tuesday">Вт</string>
+    <string name="wednesday">Ср</string>
+    <string name="thursday">Чт</string>
+    <string name="friday">Пт</string>
+    <string name="saturday">Сб</string>
+    <string name="sunday">Вс</string>
+    
+    <!-- Controller -->
+    <string name="set_threshold">Установить пороги</string>
+    <string name="send_recommendation">Отправить рекомендацию</string>
+    <string name="min_value">Минимальное значение</string>
+    <string name="max_value">Максимальное значение</string>
+    <string name="recommendation_title">Заголовок рекомендации</string>
+    <string name="recommendation_content">Содержание рекомендации</string>
+    <string name="send">Отправить</string>
+    
+    <!-- Profile -->
+    <string name="assign_controller">Назначить контролера</string>
+    <string name="controller_email">Email контролера</string>
+    <string name="logout">Выйти</string>
+    
+    <!-- Common -->
+    <string name="loading">Загрузка...</string>
+    <string name="error">Ошибка</string>
+    <string name="success">Успешно</string>
+    <string name="delete">Удалить</string>
+    <string name="edit">Редактировать</string>
+    <string name="normal">Норма</string>
+    <string name="abnormal">Отклонение</string>
+    <string name="no_data">Нет данных</string>
+    <string name="today">Сегодня</string>
+    <string name="yesterday">Вчера</string>
+    
+    <!-- Validation -->
+    <string name="field_required">Это поле обязательно</string>
+    <string name="invalid_email">Неверный формат email</string>
+    <string name="password_too_short">Пароль должен содержать минимум 6 символов</string>
+    <string name="passwords_not_match">Пароли не совпадают</string>
+    
+    <!-- Common -->
+    <string name="ok">OK</string>
+    <string name="back">Назад</string>
+    <string name="help">Помощь</string>
+    
+    <!-- Authentication -->
+    <string name="confirm_logout">Вы уверены, что хотите выйти из аккаунта?</string>
+    <string name="confirm_password">Подтвердите пароль</string>
+    <string name="full_name">ФИО</string>
+    <string name="role_information">Информация о роли</string>
+    <string name="admin">Администратор</string>
+    <string name="regular_user">Пользователь</string>
+    <string name="login_failed">Ошибка входа. Проверьте данные и повторите попытку.</string>
+    <string name="registration_failed">Ошибка регистрации. Повторите попытку.</string>
+    <string name="passwords_dont_match">Пароли не совпадают</string>
+    <string name="email_already_exists">Пользователь с таким email уже существует</string>
+    <string name="registration_success">Регистрация прошла успешно</string>
+    <string name="edit_profile">Редактирование профиля</string>
+    <string name="login_required">Требуется авторизация</string>
+    <string name="login_to_book">Войдите для бронирования</string>
+    <string name="logged_out">Вы вышли из системы</string>
+    <string name="profile_updated">Профиль обновлен</string>
+    <string name="cancel_booking_confirm">Вы уверены, что хотите отменить бронирование?</string>
+    
+    <!-- Error Messages -->
+    <string name="error_field_required">Обязательное поле</string>
+    <string name="error_invalid_email">Некорректный email</string>
+    <string name="error_invalid_password">Пароль должен иметь не менее 6 символов</string>
+    <string name="error_password_mismatch">Пароли не совпадают</string>
+    <string name="seat_not_available">Место недоступно</string>
+    <string name="no_available_seats">Нет доступных мест</string>
+    <string name="booking_closed">Бронирование закрыто</string>
+    <string name="search_criteria_required">Укажите критерии поиска</string>
+    <string name="city_required_for_date_search">Укажите город вылета или город прилета при поиске по дате</string>
+    <string name="flights_found">Найдено рейсов: %d</string>
+    <string name="booking_confirmed">Подтверждено</string>
+    <string name="booking_checked_in">Регистрация пройдена</string>
+    
+    <!-- Role Descriptions -->
+    <string name="admin_description">Администратор имеет полный доступ ко всем функциям системы. Может управлять рейсами, просматривать все бронирования и управлять пользователями.</string>
+    <string name="regular_description">Обычный пользователь может просматривать доступные рейсы, бронировать билеты и управлять своими бронированиями.</string>
+    
+    <!-- Main Menu -->
+    <string name="home">Главная</string>
+    <string name="flights">Рейсы</string>
+    <string name="bookings">Бронирования</string>
+    <string name="users">Пользователи</string>
+    
+    <!-- Flights -->
+    <string name="search_flights">Поиск рейсов</string>
+    <string name="departure_city">Город вылета</string>
+    <string name="arrival_city">Город прилета</string>
+    <string name="departure_date">Дата вылета</string>
+    <string name="departure_time">Время вылета</string>
+    <string name="arrival_time">Время прилета</string>
+    <string name="flight_number">Номер рейса</string>
+    <string name="airline">Авиакомпания</string>
+    <string name="price">Цена</string>
+    <string name="available_seats">Свободные места</string>
+    <string name="terminal">Терминал</string>
+    <string name="gate"></string>
+    <string name="status">Статус</string>
+    <string name="aircraft_type">Тип самолета</string>
+    <string name="services">Услуги</string>
+    <string name="flight_details">Детали рейса</string>
+    <string name="no_flights_found">Рейсы не найдены</string>
+    <string name="select_date">Выберите дату</string>
+    <string name="search">Поиск</string>
+    
+    <!-- Flight Status -->
+    <string name="status_scheduled">Запланирован</string>
+    <string name="status_boarding">Посадка</string>
+    <string name="status_departed">Вылетел</string>
+    <string name="status_arrived">Прибыл</string>
+    <string name="status_delayed">Задержан</string>
+    <string name="status_cancelled">Отменен</string>
+    
+    <!-- Booking -->
+    <string name="book_flight">Забронировать рейс</string>
+    <string name="booking_details">Детали бронирования</string>
+    <string name="passenger_name">Имя пассажира</string>
+    <string name="passenger_passport">Номер паспорта</string>
+    <string name="seat_number">Номер места</string>
+    <string name="booking_date">Дата бронирования</string>
+    <string name="booking_status">Статус бронирования</string>
+    <string name="payment_method">Способ оплаты</string>
+    <string name="confirm_booking">Подтвердить бронирование</string>
+    <string name="cancel_booking">Отменить бронирование</string>
+    <string name="no_bookings">Нет бронирований</string>
+    <string name="booking_success">Бронирование успешно создано</string>
+    <string name="booking_cancelled">Бронирование отменено</string>
+    <string name="confirm_cancel_booking">Вы уверены, что хотите отменить это бронирование?</string>
+    <string name="select_flight_to_book">Выберите рейс</string>
+    
+    <!-- Admin Panel -->
+    <string name="admin_panel">Панель администратора</string>
+    <string name="add_flight">Добавить рейс</string>
+    <string name="edit_flight">Редактировать рейс</string>
+    <string name="delete_flight">Удалить рейс</string>
+    <string name="manage_users">Управление пользователями</string>
+    <string name="view_all_bookings">Все бронирования</string>
+    <string name="confirm_delete_flight">Вы действительно хотите удалить рейс?</string>
+    
+    <!-- User Management -->
+    <string name="add_user">Добавить пользователя</string>
+    <string name="user_details">Данные пользователя</string>
+    <string name="phone_number">Номер телефона</string>
+    <string name="passport">Номер паспорта</string>
+    <string name="passport_series">Серия паспорта (4 цифры)</string>
+    <string name="passport_number">Номер паспорта (6 цифр)</string>
+    <string name="passport_info">Паспортные данные</string>
+    <string name="passport_series_error">Серия должна содержать 4 цифры</string>
+    <string name="passport_number_error">Номер должен содержать 6 цифр</string>
+    <string name="passport_series_required">Укажите серию паспорта</string>
+    <string name="passport_number_required">Укажите номер паспорта</string>
+    <string name="confirm_delete_user">Вы действительно хотите удалить пользователя?</string>
+    <string name="no_users_found">Пользователи не найдены</string>
+    <string name="cannot_delete_self">Невозможно удалить свою учетную запись</string>
+    
+    <!-- Profile -->
+    <string name="update_profile">Обновить профиль</string>
+    <string name="change_password">Изменить пароль</string>
+    <string name="current_password">Текущий пароль</string>
+    <string name="new_password">Новый пароль</string>
+    
+    <!-- Error Messages -->
+    <string name="required_field">Обязательное поле</string>
+    <string name="network_error">Ошибка сети. Проверьте подключение.</string>
+    <string name="permission_denied">Доступ запрещен</string>
+    <string name="something_went_wrong">Что-то пошло не так</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="loading_bookings">Загрузка бронирований...</string>
+    <string name="loading_booking">Выполняется бронирование...</string>
+    <string name="select_flight_for_booking">Выберите рейс для бронирования</string>
+    <string name="booking_created">Билет успешно забронирован!</string>
+    <string name="booking_form_title">Форма бронирования</string>
+    <string name="contact_info">Контактная информация</string>
+    <string name="contact_phone">Контактный телефон</string>
+    <string name="contact_email">Контактный email</string>
+    
+    <!-- Controller Strings -->
+    <string name="controller_dashboard">Панель контролера здоровья</string>
+    <string name="controller_subtitle">Мониторинг пациентов и управление пороговыми значениями</string>
+    <string name="refresh_patients">Обновить список</string>
+    <string name="manage_thresholds">Управление порогами</string>
+    <string name="search_patients">Поиск пациентов...</string>
+    <string name="no_patients_found">Пациенты не найдены</string>
+    <string name="patient_details">Детали пациента</string>
+    
+    <!-- Icons -->
+    <string name="ic_patients">ic_patients</string>
+    <string name="ic_refresh">ic_refresh</string>
+    <string name="ic_settings">ic_settings</string>
+    <string name="ic_patient">ic_patient</string>
+    <string name="ic_arrow_forward">ic_arrow_forward</string>
+    
+    <!-- Status -->
+    <string name="status_normal">Норма</string>
+    <string name="status_warning">Предупреждение</string>
+    <string name="status_critical">Критический</string>
+</resources>

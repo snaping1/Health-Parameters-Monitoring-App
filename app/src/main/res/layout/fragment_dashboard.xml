@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_md">
+
+            <!-- Welcome Header Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_lg"
+                app:cardCornerRadius="@dimen/card_radius"
+                app:cardElevation="@dimen/card_elevation"
+                app:cardBackgroundColor="@color/primary_green">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_lg">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Добро пожаловать!"
+                        android:textSize="@dimen/text_size_xl"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <TextView
+                        android:id="@+id/tv_controller_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_xs"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_sm"
+                        android:alpha="0.9"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_md"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_quick_measure"
+                            style="@style/Widget.Material3.Button.TextButton"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/button_height"
+                            android:layout_weight="1"
+                            android:text="Быстрое измерение"
+                            android:textSize="@dimen/text_size_sm"
+                            android:textColor="@color/primary_green"
+                            app:backgroundTint="@color/white"
+                            app:icon="@drawable/ic_chart"
+                            app:iconTint="@color/primary_green"
+                            app:cornerRadius="@dimen/spacing_sm" />
+
+                        <View
+                            android:layout_width="@dimen/spacing_md"
+                            android:layout_height="match_parent" />
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/btn_recommendations"
+                                style="@style/Widget.Material3.Button.TextButton"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/button_height"
+                                android:text="Рекомендации"
+                                android:textSize="@dimen/text_size_sm"
+                                android:textColor="@color/primary_green"
+                                app:backgroundTint="@color/white"
+                                app:icon="@drawable/ic_tips"
+                                app:iconTint="@color/primary_green"
+                                app:cornerRadius="@dimen/spacing_sm" />
+
+                            <TextView
+                                android:id="@+id/tv_recommendations_badge"
+                                android:layout_width="@dimen/icon_size_sm"
+                                android:layout_height="@dimen/icon_size_sm"
+                                android:layout_gravity="top|end"
+                                android:layout_marginTop="@dimen/spacing_xs"
+                                android:layout_marginEnd="@dimen/spacing_xs"
+                                android:background="@drawable/badge_background"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size_xs"
+                                android:textStyle="bold"
+                                android:visibility="gone" />
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Latest Parameters Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="@dimen/spacing_md">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Последние измерения"
+                    android:textSize="@dimen/text_size_lg"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary"
+                    android:fontFamily="sans-serif-medium" />
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size_md"
+                    android:layout_height="@dimen/icon_size_md"
+                    android:src="@drawable/ic_chart"
+                    app:tint="@color/primary_green" />
+
+            </LinearLayout>
+
+            <!-- Parameters RecyclerView Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/card_radius"
+                app:cardElevation="@dimen/card_elevation"
+                app:cardBackgroundColor="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_md">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_latest_parameters"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false"
+                        android:clipToPadding="false" />
+
+                    <TextView
+                        android:id="@+id/tv_empty_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:gravity="center"
+                        android:text="Нет данных о измерениях\n\nНажмите кнопку + чтобы добавить\nпервое измерение"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="@dimen/text_size_md"
+                        android:lineSpacingExtra="@dimen/spacing_xs"
+                        android:drawableTop="@drawable/ic_chart"
+                        android:drawablePadding="@dimen/spacing_md"
+                        app:drawableTint="@color/text_secondary"
+                        android:visibility="gone" />
+
+                    <ProgressBar
+                        android:id="@+id/progress_bar"
+                        android:layout_width="@dimen/icon_size_xl"
+                        android:layout_height="@dimen/icon_size_xl"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/spacing_lg"
+                        android:layout_marginBottom="@dimen/spacing_lg"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Bottom spacing for FAB -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Enhanced FAB -->
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fab_add_parameter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:text="Добавить"
+        android:textSize="@dimen/text_size_md"
+        android:contentDescription="@string/add_parameter"
+        app:icon="@android:drawable/ic_input_add"
+        app:backgroundTint="@color/primary_green"
+        app:iconTint="@color/white"
+        android:textColor="@color/white" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout> 
