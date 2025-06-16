@@ -34,10 +34,7 @@
 ## 📸 Скриншоты приложения
 
 <div align="center">
-  <img src="./image/image2.png" width="30%" alt="Описание изображения 2">
-  <img src="./image/image3.png" width="30%" alt="Описание изображения 3">
-  <img src="./image/image4.png" width="300%" alt="Описание изображения 4">
-  <img src="./image/image5.png" width="100%" alt="Описание изображения 5">
+  <img src="./image/image1.png" width="45%" alt="Главный экран приложения">
 </div>
 
 <div align="center">
@@ -50,3 +47,10 @@
   <img src="./image/image9.png" width="49%" alt="Демо 1">
   <img src="./image/image10.png" width="49%" alt="Демо 2">
 </div>
+
+
+## 📦 Установка
+```bash
+git clone https://github.com/ваш-username/ваш-репозиторий.git
+cd ваш-репозиторий
+npm install
