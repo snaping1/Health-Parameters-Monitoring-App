@@ -42,23 +42,22 @@
 </div>
 
 <div align="center">
-  <img src="./image/image6.png" width="32%" >
-  <img src="./image/image7.png" width="32%" >
-  <img src="./image/image8.png" width="32%" >
+  <img src="./image/image6.png" width="30%" >
+  <img src="./image/image7.png" width="30%" >
+  <img src="./image/image8.png" width="30%" >
 </div>
 
 <div align="center">
-  <img src="./image/image9.png" width="49%" >
-  <img src="./image/image10.png" width="49%" >
-  <img src="./image/image11.png" width="49%" >
-  <img src="./image/image12.png" width="49%" >
-  <img src="./image/image13.png" width="49%" >
-  <img src="./image/image14.png" width="49%">
+  <img src="./image/image9.png" width="30%" >
+  <img src="./image/image10.png" width="30%" >
+  <img src="./image/image12.png" width="30%" >
+  <img src="./image/image13.png" width="30%" >
+  <img src="./image/image14.png" width="30%">
 </div>
 
 
 ## 📦 Установка
 ```bash
-git clone https://github.com/ваш-username/ваш-репозиторий.git
-cd ваш-репозиторий
+git clone https://github.com/snaping1/Health-Parameters-Monitoring-App.git
+cd Health-Parameters-Monitoring-App
 npm install
