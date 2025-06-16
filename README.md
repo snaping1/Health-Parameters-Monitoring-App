@@ -36,21 +36,21 @@
 ## 🖼️ Галерея проекта
 
 <div align="center">
-  <img src="./images/image2.png" width="24%" alt="Описание изображения 2">
-  <img src="./images/image3.png" width="24%" alt="Описание изображения 3">
-  <img src="./images/image4.png" width="24%" alt="Описание изображения 4">
-  <img src="./images/image5.png" width="24%" alt="Описание изображения 5">
+  <img src="./image/image2.png" width="24%" alt="Описание изображения 2">
+  <img src="./image/image3.png" width="24%" alt="Описание изображения 3">
+  <img src="./image/image4.png" width="24%" alt="Описание изображения 4">
+  <img src="./image/image5.png" width="24%" alt="Описание изображения 5">
 </div>
 
 <div align="center">
-  <img src="./images/image6.png" width="32%" alt="Описание изображения 6">
-  <img src="./images/image7.png" width="32%" alt="Описание изображения 7">
-  <img src="./images/image8.png" width="32%" alt="Описание изображения 8">
+  <img src="./image/image6.png" width="32%" alt="Описание изображения 6">
+  <img src="./image/image7.png" width="32%" alt="Описание изображения 7">
+  <img src="./image/image8.png" width="32%" alt="Описание изображения 8">
 </div>
 
 ## 🎥 Демонстрация
 
 <div align="center">
-  <img src="./images/image9.png" width="49%" alt="Демо 1">
-  <img src="./images/image10.png" width="49%" alt="Демо 2">
+  <img src="./image/image9.png" width="49%" alt="Демо 1">
+  <img src="./image/image10.png" width="49%" alt="Демо 2">
 </div>
