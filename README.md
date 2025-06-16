@@ -31,3 +31,10 @@
 | Локальное хранилище | SharedPreferences               |
 | Android компоненты | ViewModel, LiveData, Navigation |
 
+## 📸 Скриншоты приложения
+
+<div align="center">
+  <img src="./images/screen1.png" width="30%" alt="Экран входа">
+  <img src="./images/screen2.png" width="30%" alt="Главный экран">
+  <img src="./images/screen3.png" width="30%" alt="Настройки">
+</div>
