@@ -33,13 +33,11 @@
 
 ## 📸 Скриншоты приложения
 
-## 🖼️ Галерея проекта
-
 <div align="center">
-  <img src="./image/image2.png" width="24%" alt="Описание изображения 2">
-  <img src="./image/image3.png" width="24%" alt="Описание изображения 3">
-  <img src="./image/image4.png" width="24%" alt="Описание изображения 4">
-  <img src="./image/image5.png" width="24%" alt="Описание изображения 5">
+  <img src="./image/image2.png" width="100%" alt="Описание изображения 2">
+  <img src="./image/image3.png" width="100%" alt="Описание изображения 3">
+  <img src="./image/image4.png" width="100%" alt="Описание изображения 4">
+  <img src="./image/image5.png" width="100%" alt="Описание изображения 5">
 </div>
 
 <div align="center">
@@ -47,8 +45,6 @@
   <img src="./image/image7.png" width="32%" alt="Описание изображения 7">
   <img src="./image/image8.png" width="32%" alt="Описание изображения 8">
 </div>
-
-## 🎥 Демонстрация
 
 <div align="center">
   <img src="./image/image9.png" width="49%" alt="Демо 1">
